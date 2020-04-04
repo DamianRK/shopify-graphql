@@ -1,0 +1,23 @@
+mutation productUpdate($input: ProductInput!) {
+  productUpdate(input: $input) {
+    product {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+
+{
+  "input": {
+    "id": "gid://shopify/Product/4558581465165",
+    "metafields": {
+    	"key": "tab_1_title",
+      "namespace": "sf_product_tabs",
+      "valueType": "STRING",
+      "value": "Specyfikacja produktu"
+    }
+  }
+}
