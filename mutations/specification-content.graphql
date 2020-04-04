@@ -1,0 +1,23 @@
+mutation productUpdate($input: ProductInput!) {
+  productUpdate(input: $input) {
+    product {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+
+{
+  "input": {
+    "id": "gid://shopify/Product/4558581465165",
+    "metafields": {
+    	"key": "tab_1_content",
+      "namespace": "sf_product_tabs",
+      "valueType": "STRING",
+      "value": "<figure class=\"table\"><table><tbody><tr><th>Producent</th><td>Ozcan, Turcja</td></tr><tr><th>Numer katalogowy</th><td>&nbsp;</td></tr><tr><th>Materiał</th><td>&nbsp;</td></tr><tr><th>Kolor</th><td>&nbsp;</td></tr><tr><th>Źródło światła</th><td>&nbsp;</td></tr><tr><th>Moc</th><td>&nbsp;</td></tr><tr><th>Źródło światła w zestawie</th><td>&nbsp;</td></tr><tr><th>Ilość lumenów</th><td>&nbsp;</td></tr><tr><th>Barwa światła</th><td>&nbsp;</td></tr><tr><th>Średnica</th><td>&nbsp;</td></tr><tr><th>Szerokość</th><td>&nbsp;</td></tr><tr><th>Wysokość</th><td>&nbsp;</td></tr><tr><th>Pozostałe wymiary</th><td>&nbsp;</td></tr><tr><th>Mocowanie żarówki</th><td>&nbsp;</td></tr><tr><th>Zasilanie</th><td>230V / 50Hz</td></tr><tr><th>Możliwość ściemniania</th><td>&nbsp;</td></tr><tr><th>Klasa szczelności (IP)</th><td>IP 20, do wewnątrz</td></tr><tr><th>Gwarancja</th><td>24 miesiące</td></tr><tr><th>Dodatkowe zalety</th><td>łatwy montaż</td></tr><tr><th>Produkt ekologiczny</th><td>&nbsp;</td></tr><tr><th>Uwagi</th><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p>"
+    }
+  }
+}
